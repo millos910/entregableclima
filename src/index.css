@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=IBM+Plex+Sans:wght@300&family=Pangolin&family=Roboto+Mono:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courgette';
+    margin: 0;
+}
+h1,h2,h3,p,ul{
+    margin-top:0;
+    margin-bottom: 0;
+
+}
+input,button{
+    font-family: inherit;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+button{
+    border: none;
+}
