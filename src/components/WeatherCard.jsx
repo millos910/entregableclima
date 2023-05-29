@@ -18,8 +18,8 @@ export const WeatherCard = ({weather, temp}) => {
             <div className="Weather__info">
                 <h3 className="Weather__info-title">"{weather?.weather[0].description}"</h3>
                 <ul className="Weather__info-list">
-                    <li className="Weather__list-item"><span className="Weather__list-label">Winds Speed: </span><span className="Weather__list-value">{weather?.wind.speed} %</span></li>
-                    <li className="Weather__list-item"><span className="Weather__list-label">clouds: </span><span className="Weather__list-value">{weather?.clouds.all} m/s</span></li>
+                    <li className="Weather__list-item"><span className="Weather__list-label">Winds Speed: </span><span className="Weather__list-value">{weather?.wind.speed} m/s</span></li>
+                    <li className="Weather__list-item"><span className="Weather__list-label">clouds: </span><span className="Weather__list-value">{weather?.clouds.all} %</span></li>
                     <li className="Weather__list-item"><span className="Weather__list-label">pressure: </span><span className="Weather__list-value">{weather?.main.pressure} hPa</span></li>
                 </ul>
             </div>
@@ -28,6 +28,9 @@ export const WeatherCard = ({weather, temp}) => {
             <h2 className="temp">{isCelsius ? `${temp?.celsius} °C`: `${temp?.farenheit}°F`}</h2>
             <button className="btn" onClick={handleChangeTemp}>change to {isCelsius?'°F':'°C'}</button>
         </aside>
+        <footer>
+            <h4><b>created by:</b> Emilio Montero </h4>
+        </footer>
         
         
     </article>
